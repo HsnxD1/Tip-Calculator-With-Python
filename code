@@ -1,0 +1,20 @@
+#TIP CALCULATOR CODE FOR PYTHON
+
+#Welcome message 👇
+print("Welcome to the tip calculator.")
+
+#Input commands for Users 👇
+bill = input("What is Your Total bill? $")
+tip = input("What is the perecentage of tip you would like to give? 10 ,12 or 15?")
+people = input("how many people would split the bill ")
+
+#Converting and Operations For The Data Types 👇
+Tip = int(tip)/100 * int(bill)
+Total_bill = int(bill) + int(Tip)
+Final_Bill = round(int(Total_bill) / int(people),2)
+
+#Using "F string" and printing the final amount 👇
+print(f"Each person should pay: ${Final_Bill}")
+
+#Bonus+ Thank You message 👇
+print("Thanks FOr using Tip Calculator")
